@@ -63,8 +63,8 @@ In your project folder (``proj/my_first_cfu``) run the following:
 
 .. code-block:: bash
 
-    $ make prog  # if you're not using the arty add TARGET=<your board>
-    $ make load  # if you're not using the arty add TARGET=<your board>
+    $ make prog TARGET=digilent_arty USE_SYMBIFLOW=1 EXTRA_LITEX_ARGS="--variant a7-100" # if you're not using the arty change TARGET and variant
+    $ make load TARGET=digilent_arty USE_SYMBIFLOW=1 EXTRA_LITEX_ARGS="--variant a7-100" # if you're not using the arty change TARGET and variant
 
 After the build processes are completed you should see something like the
 following in your terminal:
