@@ -186,7 +186,7 @@ to each of the ``make`` commands.   For example, to target iCEBreaker, add ``TAR
    # Program the bitstream onto the board. The first run will take several minutes
    # as the bitstream is synthesized.
    # Set TARGET and USE_* flags to match your installation.
-   $ make prog TARGET=digilent_arty USE_SYMBIFLOW=1
+   $ make prog TARGET=digilent_arty USE_SYMBIFLOW=1 EXTRA_LITEX_ARGS="--variant a7-100"
    #  OR
    $ make prog TARGET=digilent_arty USE_VIVADO=1
 
